@@ -1,0 +1,13 @@
+﻿@model MovieApp.Models.Movie
+@{
+    ViewData["Title"] = "Edit Movie";
+}
+
+<h2 class="mb-3">Edit Movie</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <partial name="_MovieForm" />
+    <button type="submit" class="btn btn-success">💾 Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary ms-2">⬅ Back</a>
+</form>

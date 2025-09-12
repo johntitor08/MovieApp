@@ -1,0 +1,18 @@
+﻿@model MovieApp.Models.Movie
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h1>@Model.Title</h1>
+
+@if (!string.IsNullOrEmpty(Model.PosterUrl))
+{
+    <img src="@Model.PosterUrl" alt="@Model.Title" class="img-thumbnail mb-3" style="max-width:200px;" />
+}
+
+<p>@Model.Description</p>
+<p><strong>Director:</strong> @Model.Director</p>
+<p><strong>Genre:</strong> @Model.Genre</p>
+<p><strong>Rating:</strong> @Model.Rating</p>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">⬅ Back</a>

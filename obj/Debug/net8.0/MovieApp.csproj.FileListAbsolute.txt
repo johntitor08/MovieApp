@@ -1,0 +1,66 @@
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\appsettings.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.staticwebassets.runtime.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.staticwebassets.endpoints.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.exe
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.deps.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.runtimeconfig.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.dll
+C:\Users\johnt\source\repos\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.pdb
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfoInputs.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfo.cs
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cs
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\bundle\MovieApp.styles.css
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\projectbundle\MovieApp.bundle.scp.css
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.dll
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\refint\MovieApp.dll
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.pdb
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.genruntimeconfig.cache
+C:\Users\johnt\source\repos\MovieApp\MovieApp\obj\Debug\net8.0\ref\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\appsettings.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.staticwebassets.endpoints.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.staticwebassets.runtime.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.exe
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.deps.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.runtimeconfig.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\MovieApp.pdb
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfoInputs.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfo.cs
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cs
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\bundle\MovieApp.styles.css
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\scopedcss\projectbundle\MovieApp.bundle.scp.css
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\refint\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.pdb
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.genruntimeconfig.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\ref\MovieApp.dll
