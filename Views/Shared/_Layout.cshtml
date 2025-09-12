@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MovieApp.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -16,7 +18,7 @@
                     <i class="fas fa-film me-2"></i>MovieApp
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -29,34 +31,55 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="moviesDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-tv me-1"></i>Movies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="moviesDropdown">
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-fire me-2"></i>Popular</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-star me-2"></i>Top Rated</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-clock me-2"></i>Coming Soon</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-list me-2"></i>Browse by Genre</a></li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Index"
+                                        asp-route-search="popular">
+                                        <i class="fas fa-fire me-2"></i>Popular
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Index"
+                                        asp-route-search="top rated">
+                                        <i class="fas fa-star me-2"></i>Top Rated
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Index"
+                                        asp-route-search="coming soon">
+                                        <i class="fas fa-clock me-2"></i>Coming Soon
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Index">
+                                        <i class="fas fa-list me-2"></i>Browse by Genre
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-heart me-1"></i>My List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/Privacy"><i class="fas fa-shield-alt me-1"></i>Privacy</a>
+                            <a class="nav-link" asp-controller="Movie" asp-action="Index" asp-route-search="my list">
+                                <i class="fas fa-heart me-1"></i>My List
+                            </a>
                         </li>
                     </ul>
 
                     <!-- Search Form -->
                     <form class="search-form me-3 d-flex" asp-controller="Movie" asp-action="Index" method="get">
                         <input class="form-control search-input" type="search" name="search"
-                               placeholder="Search movies..." aria-label="Search" value="@(ViewData["Search"] ?? "")" />
+                            placeholder="Search movies..." aria-label="Search" value="@(ViewData["Search"] ?? "")" />
                         <button class="btn search-btn" type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
 
+                    <!-- User & Theme -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <button id="themeToggle" class="btn btn-sm btn-outline-light ms-2">
@@ -64,21 +87,50 @@
                             </button>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://ui-avatars.com/api/?name=User&background=random" class="user-img"
-                                     alt="User">
+                            <a class="nav-link dropdown-toggle" href="#" id="moviesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-tv me-1"></i>Movies
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <ul class="dropdown-menu" aria-labelledby="moviesDropdown">
                                 <li>
-                                    <h6 class="dropdown-header">Signed in as <strong>User</strong></h6>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="popular">
+                                        <i class="fas fa-fire me-2"></i>Popular
+                                    </a>
                                 </li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-history me-2"></i>Watch History</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>Sign Out</a></li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="toprated">
+                                        <i class="fas fa-star me-2"></i>Top Rated
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="comingsoon">
+                                        <i class="fas fa-clock me-2"></i>Coming Soon
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="action">
+                                        Action
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="comedy">
+                                        Comedy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
+                                        asp-route-filter="drama">
+                                        Drama
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -93,14 +145,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - MovieApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

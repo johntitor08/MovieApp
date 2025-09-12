@@ -3,11 +3,13 @@
     ViewData["Title"] = "Edit Movie";
 }
 
-<h2 class="mb-3">Edit Movie</h2>
+<h2 class="mb-4">Edit Movie</h2>
 
 <form asp-action="Edit" method="post">
     <input type="hidden" asp-for="Id" />
     <partial name="_MovieForm" />
-    <button type="submit" class="btn btn-success">💾 Save Changes</button>
+    <button type="submit" class="btn btn-success">
+        <i class="fas fa-save me-1"></i> Save Changes
+    </button>
     <a asp-action="Index" class="btn btn-secondary ms-2">⬅ Back</a>
 </form>

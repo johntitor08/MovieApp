@@ -13,6 +13,32 @@
 <p>@Model.Description</p>
 <p><strong>Director:</strong> @Model.Director</p>
 <p><strong>Genre:</strong> @Model.Genre</p>
-<p><strong>Rating:</strong> @Model.Rating</p>
+
+@if (Model.Rating > 0)
+{
+    <p><strong>Rating:</strong> @Model.Rating / 10</p>
+
+    <div>
+        @for (int i = 1; i <= 5; i++)
+        {
+            if (Model.Rating >= i * 2)
+            {
+                <i class="fas fa-star text-warning"></i>
+            }
+            else if (Model.Rating >= (i * 2) - 1)
+            {
+                <i class="fas fa-star-half-alt text-warning"></i>
+            }
+            else
+            {
+                <i class="far fa-star text-warning"></i>
+            }
+        }
+    </div>
+}
+else
+{
+    <p><em>No rating available</em></p>
+}
 
 <a asp-action="Index" class="btn btn-secondary mt-3">⬅ Back</a>
