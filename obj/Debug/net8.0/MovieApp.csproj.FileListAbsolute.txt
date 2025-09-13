@@ -192,3 +192,17 @@ C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\Mo
 C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.csproj.AssemblyReference.cache
 C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\MovieApp.csproj.Up2Date
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.csproj.AssemblyReference.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfoInputs.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.AssemblyInfo.cs
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cache
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.RazorAssemblyInfo.cs
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.sourcelink.json
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\refint\MovieApp.dll
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieProject\MovieApp\obj\Debug\net8.0\MovieApp.pdb
+C:\Users\johnt\Desktop\Programming\Project\C#\.NET Framework\ASP.NET Core\MVC\MovieApp\MovieApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

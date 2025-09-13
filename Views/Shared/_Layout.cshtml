@@ -88,46 +88,38 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="moviesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                               data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-tv me-1"></i>Movies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="moviesDropdown">
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="popular">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="popular">
                                         <i class="fas fa-fire me-2"></i>Popular
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="toprated">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="toprated">
                                         <i class="fas fa-star me-2"></i>Top Rated
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="comingsoon">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="comingsoon">
                                         <i class="fas fa-clock me-2"></i>Coming Soon
                                     </a>
                                 </li>
+                                <li><hr class="dropdown-divider"></li>
                                 <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="action">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="action">
                                         Action
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="comedy">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="comedy">
                                         Comedy
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter"
-                                        asp-route-filter="drama">
+                                    <a class="dropdown-item" asp-controller="Movie" asp-action="Filter" asp-route-filter="drama">
                                         Drama
                                     </a>
                                 </li>

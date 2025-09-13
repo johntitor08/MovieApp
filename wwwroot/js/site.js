@@ -1,6 +1,7 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("themeToggle");
 
+    // Tema kontrolü
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
         themeToggle.querySelector("i").classList.replace("fa-moon", "fa-sun");
@@ -17,6 +18,7 @@
         );
     });
 
+    // Navbar collapse mobilde linke tıklandığında kapanacak
     const navbarCollapse = document.querySelector('.navbar-collapse');
     document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
         link.addEventListener('click', () => {
@@ -26,26 +28,4 @@
         });
     });
 
-    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            const parentDropdown = toggle.closest('.dropdown');
-            const menu = parentDropdown.querySelector('.dropdown-menu');
-            if (!menu) return;
-
-            document.querySelectorAll('.dropdown-menu.show').forEach(openMenu => {
-                if (openMenu !== menu) openMenu.classList.remove('show');
-            });
-
-            menu.classList.toggle('show');
-        });
-    });
-
-    document.addEventListener('click', (e) => {
-        document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
-            if (!menu.closest('.dropdown').contains(e.target)) {
-                menu.classList.remove('show');
-            }
-        });
-    });
 });

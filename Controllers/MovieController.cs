@@ -2,8 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using MovieApp.Data;
 using MovieApp.Models;
-using System.Threading.Tasks;
-using System.Linq;
 
 namespace MovieApp.Controllers
 {
@@ -11,17 +9,18 @@ namespace MovieApp.Controllers
     {
         private readonly MovieDbContext _context = context;
 
+        // INDEX (arama ile)
         public async Task<IActionResult> Index(string? search)
         {
             var movies = _context.Movies.AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(search))
             {
-                search = search.ToLower();
+                string searchLower = search.ToLower();
                 movies = movies.Where(m =>
-                    m.Title.ToLower().Contains(search) ||
-                    m.Genre.ToLower().Contains(search) ||
-                    m.Director.ToLower().Contains(search)
+                    EF.Functions.Like(m.Title.ToLower(), $"%{searchLower}%") ||
+                    EF.Functions.Like(m.Genre.ToLower(), $"%{searchLower}%") ||
+                    EF.Functions.Like(m.Director.ToLower(), $"%{searchLower}%")
                 );
             }
 
@@ -29,44 +28,55 @@ namespace MovieApp.Controllers
             return View(await movies.ToListAsync());
         }
 
+        // DETAILS
         public async Task<IActionResult> Details(int id)
         {
             var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == id);
             return movie == null ? NotFound() : View(movie);
         }
 
+        // FILTER
         [HttpGet("filter/{filter}", Name = "MovieFilter")]
-        public async Task<IActionResult> Filter(string filter, string? search)
+        public async Task<IActionResult> Filter(string filter)
         {
             var movies = _context.Movies.AsQueryable();
+
             filter = filter.ToLower();
 
-            movies = filter switch
+            if (filter == "popular")
             {
-                "popular" => movies.Where(m => m.Rating >= 8),
-                "toprated" => movies.OrderByDescending(m => m.Rating),
-                "comingsoon" => movies.Where(m => m.Genre.Contains("upcoming", StringComparison.CurrentCultureIgnoreCase)),
-                "action" => movies.Where(m => m.Genre.Contains("action", StringComparison.CurrentCultureIgnoreCase)),
-                "comedy" => movies.Where(m => m.Genre.Contains("comedy", StringComparison.CurrentCultureIgnoreCase)),
-                "drama" => movies.Where(m => m.Genre.Contains("drama", StringComparison.CurrentCultureIgnoreCase)),
-                _ => movies
-            };
-
-            if (!string.IsNullOrWhiteSpace(search))
+                movies = movies.Where(m => m.Rating >= 8).OrderByDescending(m => m.Rating);
+            }
+            else if (filter == "toprated")
             {
-                search = search.ToLower();
-                movies = movies.Where(m =>
-                    m.Title.Contains(search, StringComparison.CurrentCultureIgnoreCase) ||
-                    m.Genre.Contains(search, StringComparison.CurrentCultureIgnoreCase) ||
-                    m.Director.Contains(search, StringComparison.CurrentCultureIgnoreCase)
-                );
+                movies = movies.OrderByDescending(m => m.Rating);
+            }
+            else if (filter == "comingsoon")
+            {
+                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("upcoming"));
+            }
+            else if (filter == "action")
+            {
+                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("action"));
+            }
+            else if (filter == "comedy")
+            {
+                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("comedy"));
+            }
+            else if (filter == "drama")
+            {
+                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("drama"));
             }
 
-            ViewData["Search"] = search;
             ViewData["Filter"] = filter;
-            return View("Index", await movies.ToListAsync());
+            ViewData["Search"] = null;
+
+            var result = await movies.ToListAsync();
+
+            return View("Index", result);
         }
 
+        // CREATE
         [HttpGet]
         public IActionResult Create() => View();
 
@@ -82,6 +92,7 @@ namespace MovieApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // EDIT
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -109,6 +120,7 @@ namespace MovieApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // DELETE
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
