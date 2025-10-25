@@ -36,19 +36,19 @@ namespace MovieApp.Controllers
             filter = filter.ToLower();
 
             if (filter == "mylist")
-                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("favorite"));
+                movies = movies.Where(m => m.Genre != null && m.Genre.Contains("favorite", StringComparison.CurrentCultureIgnoreCase));
             else if (filter == "popular")
                 movies = movies.Where(m => m.Rating >= 8).OrderByDescending(m => m.Rating);
             else if (filter == "toprated")
                 movies = movies.OrderByDescending(m => m.Rating);
             else if (filter == "comingsoon")
-                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("upcoming"));
+                movies = movies.Where(m => m.Genre != null && m.Genre.Contains("upcoming", StringComparison.CurrentCultureIgnoreCase));
             else if (filter == "action")
-                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("action"));
+                movies = movies.Where(m => m.Genre != null && m.Genre.Contains("action", StringComparison.CurrentCultureIgnoreCase));
             else if (filter == "comedy")
-                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("comedy"));
+                movies = movies.Where(m => m.Genre != null && m.Genre.Contains("comedy", StringComparison.CurrentCultureIgnoreCase));
             else if (filter == "drama")
-                movies = movies.Where(m => m.Genre != null && m.Genre.ToLower().Contains("drama"));
+                movies = movies.Where(m => m.Genre != null && m.Genre.Contains("drama", StringComparison.CurrentCultureIgnoreCase));
 
             ViewData["Filter"] = filter;
             ViewData["Search"] = null;
